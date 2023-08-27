@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2023 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -42,4 +42,4 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/xiaomi/alioth/alioth-vendor.mk)
+$(call inherit-product, vendor/xiaomi/thyme/thyme-vendor.mk)
