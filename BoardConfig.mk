@@ -17,6 +17,10 @@ TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 # Display
 TARGET_SCREEN_DENSITY := 440
 
+# Fingerprint
+TARGET_SURFACEFLINGER_UDFPS_LIB := //$(DEVICE_PATH):libudfps_extension.thyme
+TARGET_USES_FOD_ZPOS := true
+
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/xiaomi/thyme.config
 
