@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2022 The KaleidoscopeOS Project
+# Copyright (C) 2021 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -30,7 +30,7 @@ TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := cortex-a76
 
 TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv8-a
+TARGET_2ND_ARCH_VARIANT := armv8-2a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a76
@@ -180,7 +180,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2022-08-01
+VENDOR_SECURITY_PATCH := 2023-06-01
 
 # SELinux
 include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
