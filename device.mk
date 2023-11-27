@@ -20,13 +20,19 @@ TARGET_SCREEN_WIDTH := 1080
 THYME_PREBUILT := device/xiaomi/thyme-prebuilt
 
 # Overlays
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-system
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
 PRODUCT_PACKAGES += \
-    CarrierConfigOverlayThyme \
-    FrameworkResOverlayThyme \
-    SettingsOverlayThyme \
-    SystemUIOverlayLynnrin \
-    SystemUIOverlayThyme \
-    TelephonyOverlayThyme
+    CarrierConfigResCommon \
+    FrameworksResCommon \
+    FrameworksResTarget \
+    SystemUIResCommon \
+    TelephonyResCommon \
+    WifiResCommon \
+    WifiResTarget \
+    DeviceFrameworks \
+    DeviceSystemUI
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
