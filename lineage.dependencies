@@ -1,6 +1,20 @@
 [
   {
-    "repository": "android_device_xiaomi_sm8250-common",
-    "target_path": "device/xiaomi/sm8250-common"
+    "repository": "DogDayAndroid/android_kernel_xiaomi_thyme",
+    "target_path": "kernel/xiaomi/thyme",
+    "branch": "lineage-20.0",
+    "remote": "codeberg"
+  },
+  {
+    "repository": "DogDayAndroid/android_vendor_xiaomi_thyme",
+    "target_path": "vendor/xiaomi/thyme",
+    "branch": "Arbitrarilygithub-13.0",
+    "remote": "codeberg"
+  },
+  {
+    "repository": "LineageOS/android_hardware_xiaomi",
+    "target_path": "hardware/xiaomi",
+    "branch": "lineage-20",
+    "remote": "github"
   }
 ]
