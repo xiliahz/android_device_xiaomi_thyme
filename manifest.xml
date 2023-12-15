@@ -572,6 +572,15 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
     <hal format="hidl">
+        <name>vendor.qti.qspmhal</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IQspmhal</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>vendor.xiaomi.hardware.fingerprintextension</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -604,6 +613,15 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <version>2.1</version>
         <interface>
             <name>IGoodixFingerprintDaemon</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.xiaomi.hardware.citsensorservice</name>
+        <transport>hwbinder</transport>
+        <version>1.1</version>
+        <interface>
+            <name>ICitSensorService</name>
             <instance>default</instance>
         </interface>
     </hal>
