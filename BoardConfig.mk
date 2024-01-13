@@ -5,7 +5,6 @@
 #
 
 DEVICE_PATH := device/xiaomi/thyme
-THYME_PREBUILT := device/xiaomi/thyme-prebuilt
 
 # A/B
 AB_OTA_UPDATER := true
@@ -226,7 +225,8 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 include vendor/xiaomi/thyme/BoardConfigVendor.mk
 
 #启用预编译
+THYME_PREBUILT := device/xiaomi/thyme-prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
-TARGET_PREBUILT_KERNEL := $(THYME_PREBUILT)/kernel/Image
-TARGET_PREBUILT_DTB := $(THYME_PREBUILT)/kernel/dtb.img
-BOARD_PREBUILT_DTBOIMAGE := $(THYME_PREBUILT)/kernel/dtbo.img
+TARGET_PREBUILT_KERNEL := $(THYME_PREBUILT)/Image
+TARGET_PREBUILT_DTB := $(THYME_PREBUILT)/dtb.img
+BOARD_PREBUILT_DTBOIMAGE := $(THYME_PREBUILT)/dtbo.img

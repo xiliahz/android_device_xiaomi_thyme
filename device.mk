@@ -17,8 +17,6 @@ $(call inherit-product, vendor/xiaomi/thyme/thyme-vendor.mk)
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
-THYME_PREBUILT := device/xiaomi/thyme-prebuilt
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-system
 PRODUCT_ENFORCE_RRO_TARGETS := *
@@ -563,3 +561,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/qca6390/WCNSS_qcom_cfg.ini \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
+    
+THYME_PREBUILT := device/xiaomi/thyme-prebuilt
+
+# Kernel
+PRODUCT_COPY_FILES += \
+    $(THYME_PREBUILT)/dtb.img:dtb.img
