@@ -567,3 +567,7 @@ THYME_PREBUILT := device/xiaomi/thyme-prebuilt
 # Kernel
 PRODUCT_COPY_FILES += \
     $(THYME_PREBUILT)/dtb.img:dtb.img
+
+# Fastcharge
+PRODUCT_PACKAGES += \
+    vendor.lineage.fastcharge@1.0-service.xiaomi_sm8250
